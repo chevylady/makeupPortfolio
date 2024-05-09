@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pulseBtn{
+	animation: pulse 1.5s infinite alternate;
+}
+@keyframes pulse{
+	from{
+		transform: scale(.8);
+	}to{
+		transform: scale(1.1);
+	}
+}
