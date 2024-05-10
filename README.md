@@ -1,4 +1,10 @@
-# Nuxt 3 Minimal Starter
+# Welcome!
+
+This repository includes code for simple makeup portfolio website with gallery and contact form. Developed with Nuxt 3 & Tailwind CSS.
+You can see it on production at www.gkmua.art .
+I have used PHP script for email configuration - it is not included in repo.
+
+## Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
