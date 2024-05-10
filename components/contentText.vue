@@ -11,9 +11,7 @@
 		</p>
 		<span>Potrzebujesz mnie?&#128521;</span> - zadaj pytanie wchodząc na
 		<a href="/contact" class="font-bold">Kontakt</a> lub wyślij wiadomość na
-		<a href="http://instagram.com/gk.muart" target="_blank" rel="noopener"
-			><img src="../assets/instagram.svg" alt="instagram" class="pulseBtn h-6 inline ml-1"
-		/></a>
+		<InstaBtnComponent/>
 	</div>
 	<p class="text-gray-700">Autor: Klaudia</p>
 </template>

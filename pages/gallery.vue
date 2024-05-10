@@ -8,11 +8,6 @@
 				<p class="pt-3 px-3 leading-6 text-base">
 					{{ img.desc }}
 				</p>
-				<div class="absolute bottom-0 right-2">
-					<a href="http://instagram.com/gk.muart" target="_blank" rel="noopener"
-						><img src="../assets/instagram.svg" alt="instagram" class="pulseBtn h-6 inline ml-1"
-					/></a>
-				</div>
 			</div>
 		</div>
 		<div class="grid grid-cols-1">
@@ -34,11 +29,6 @@
 					<p class="pt-3 leading-6 text-base">
 						{{ img.desc }}
 					</p>
-					<div class="absolute bottom-0 right-2">
-						<a href="http://instagram.com/gk.muart" target="_blank" rel="noopener"
-							><img src="../assets/instagram.svg" alt="instagram" class="h-6 inline ml-1"
-						/></a>
-					</div>
 				</div>
 			</template>
 		</div>

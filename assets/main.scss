@@ -3,12 +3,24 @@
 @tailwind utilities;
 
 .pulseBtn{
+	
 	animation: pulse 1.5s infinite alternate;
+}
+.shake{
+	animation: shakeBtn .8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+	animation-delay: 1s;
 }
 @keyframes pulse{
 	from{
-		transform: scale(.8);
+		transform: scale(.95);
 	}to{
 		transform: scale(1.1);
+	}
+}
+@keyframes shakeBtn{
+	from{
+		transform: rotate(0deg);
+	}to{
+		transform: rotate(4deg);
 	}
 }

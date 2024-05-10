@@ -1,26 +1,34 @@
 <template>
-	<div class="relative container-lg mt-24 pt-10 px-3">
-		<div class="flex flex-col-reverse items-center md:flex-row md:justify-stretch flex-wrap gap-4">
-			<img src="../assets/img/audrey.png" alt="decoration photo" class="w-full md:w-1/3" />
-			<form class="w-full md:w-1/2 mx-auto p-5 shadow-lg shadow-gray-900 rounded-lg">
-				<div class="flex flex-col items-center z-0 w-full mb-5 group flex-wrap">
-					<h1 class="text-indigo-500 font-semibold text-2xl uppercase">Kontakt</h1>
-					<div class="mt-3 flex gap-6 text-indigo-800 font-bold text-lg">
-						<a href="tel:+48733887628" class="flex items-center"
-							>Telefon<img src="../assets/img/phone-solid.svg" alt="ikona telefonu" class="ml-2 h-5"
-						/></a>
-						<a
-							href="http://instagram.com/gk.muart"
-							target="_blank"
-							rel="noopener"
-							class="text-indigo-800 font-bold text-lg"
-							>Instagram<img src="../assets/instagram.svg" alt="instagram" class="pulseBtn h-6 inline ml-1"
-						/></a>
+	<div class="relative container mx-auto mt-20 pt-10">
+		<div class="z-0 -translate-x-32 translate-y-20 absolute h-svh w-full">
+			<img src="../assets/img/water.jpg" alt="" class="rotate-45" />
+		</div>
+		<div class="flex flex-col-reverse items-center md:flex-row flex-wrap gap-2 z-10">
+			<img src="../assets/img/audrey.png" alt="decoration photo" class="z-10 w-1/2 md:w-1/4" />
+			<form class="z-10 w-full md:w-2/3 md:mb-8 mx-auto p-5 shadow-lg shadow-gray-900 rounded-lg bg-gray-50">
+				<div class="z-10 flex justify-evenly items-center w-full mb-5 group flex-wrap">
+					<div>
+						<h1 class="text-indigo-500 font-semibold text-2xl uppercase">Kontakt</h1>
+						<div class="mt-3 font-bold text-lg">
+							<a href="tel:+48733887628" class="flex items-center"
+								>Telefon<img src="../assets/img/phone-solid.svg" alt="ikona telefonu" class="shake ml-2 h-5"
+							/></a>
+						</div>
+						<p>lokalizacja: Mogilany i okolice</p>
 					</div>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20542.83635161785!2d19.871900094735942!3d49.939070525909464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165d5f4608c8b1%3A0xaf5fd6f87dc75664!2s32-031%20Mogilany!5e0!3m2!1spl!2spl!4v1715284105200!5m2!1spl!2spl"
+						class="my-5"
+						width="200"
+						height="200"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 				<hr class="w-full my-5" />
 				<div class="grid md:grid-cols-2 md:gap-6">
-					<div class="relative z-0 w-full mb-5 group">
+					<div class="relative z-10 w-full mb-5 group">
 						<input
 							type="text"
 							name="floating_first_name"
@@ -36,7 +44,7 @@
 							>Imię*</label
 						>
 					</div>
-					<div class="relative z-0 w-full mb-5 group">
+					<div class="relative z-10 w-full mb-5 group">
 						<input
 							type="text"
 							name="floating_last_name"
@@ -54,7 +62,7 @@
 					</div>
 				</div>
 				<div class="grid md:grid-cols-2 md:gap-6">
-					<div class="relative z-0 w-full mb-5 group">
+					<div class="relative z-10 w-full mb-5 group">
 						<input
 							type="tel"
 							name="floating_phone"
@@ -70,7 +78,7 @@
 							>Numer telefonu*</label
 						>
 					</div>
-					<div class="relative z-0 w-full mb-5 group">
+					<div class="relative z-10 w-full mb-5 group">
 						<input
 							type="email"
 							name="floating_email"
@@ -86,7 +94,7 @@
 					</div>
 				</div>
 				<div class="grid lg:grid-cols-2 md:gap-3">
-					<div class="relative flex items-center justify-between z-0 w-full flex mb-5 group">
+					<div class="relative flex items-center justify-between z-10 w-full flex mb-5 group">
 						<label for="selected-option" class="block text-sm text-gray-900 dark:text-gray-300 mr-3"> Opcja </label>
 						<select v-model="formData.selected" id="selected-option" class="text-sm w-36 border-gray-300">
 							<option value="">-wybierz-</option>
@@ -94,7 +102,7 @@
 							<option value="stacjonarnie">stacjonarnie</option>
 						</select>
 					</div>
-					<div class="relative flex items-center justify-between z-0 w-full flex mb-5 group">
+					<div class="relative flex items-center justify-between z-10 w-full flex mb-5 group">
 						<label for="selected-makeup" class="block text-sm text-gray-900 dark:text-gray-300 mr-3"
 							>Rodzaj makijażu</label
 						>
@@ -106,7 +114,7 @@
 							<option value="face-painting">face-painting</option>
 						</select>
 					</div>
-					<div class="relative flex items-center justify-between z-0 w-full mb-5 group">
+					<div class="relative flex items-center justify-between z-10 w-full mb-5 group">
 						<label class="block text-sm text-gray-900 dark:text-gray-300 mr-3" for="date">Wybierz datę</label>
 						<input
 							type="date"
@@ -135,7 +143,7 @@
 					</div>
 				</div>
 
-				<div class="flex items-center z-0 w-full mb-5 group flex-wrap">
+				<div class="flex items-center z-10 w-full mb-5 group flex-wrap">
 					<button
 						@click.prevent="submitForm()"
 						type="submit"
